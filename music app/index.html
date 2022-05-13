@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="music_logo.png">
+    <title>Music Player</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(back_2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        header p {
+            color: antiquewhite;
+            text-align: justify;
+            font-size: large;
+            margin: 20px;
+        }
+
+        #main_content {
+            display: flex;
+            justify-content: center;
+        }
+
+        #inner {
+            background-color: rgba(54, 108, 126, 0.5);
+            /* border: 2px solid red; */
+            width: auto;
+            margin: 20px;
+
+        }
+
+        legend {
+            margin: 20px 5px;
+            /* font-size: large; */
+        }
+
+        li {
+            margin: 20px;
+            list-style:decimal;
+            font-size: larger;
+        }
+
+        audio {
+            width: 500px;
+        }
+
+        footer {
+            background-color: rgba(102, 105, 81, 0.6);
+            height: 50px;
+            width: auto;
+            text-align: center;
+            font-size:medium;
+            padding: 2px;
+        }
+
+        p {
+            padding: 2px;
+            color: bisque;
+            margin: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header id="page_head">
+        <h1>Music App</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem provident maiores dolore sint ducimus
+            aperiam officia! Magnam vero nobis architecto itaque, atque maxime nisi fugiat reprehenderit nihil nemo,
+            ipsam numquam dolore eum. Quo, laboriosam illo officiis, deserunt eos repellat accusamus quos enim ipsam aut
+            minima provident ab repellendus dolorum minus maiores suscipit qui voluptatibus totam. Illo, quos id?
+            Consequuntur, officia, asperiores fugit sint dolorum quis incidunt unde laudantium aut magnam nulla quia
+            ipsam maiores quo rem, nisi autem quae natus?</p>
+    </header>
+
+    <main id="main_content">
+        <div id="inner">
+            <ol>
+                <li>
+                    <legend>Song_1</legend>
+                    <audio controls>
+                        <source src="SHIV_TANDAV.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <legend>Song_2</legend>
+                    <audio controls>
+                        <source src="SHIV_TANDAV.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <legend>Song_3</legend>
+                    <audio controls>
+                        <source src="SHIV_TANDAV.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <legend>Song_4</legend>
+                    <audio controls>
+                        <source src="SHIV_TANDAV.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <legend>Song_5</legend>
+                    <audio controls>
+                        <source src="SHIV_TANDAV.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+            </ol>
+        </div>
+
+    </main>
+
+    <footer id="page_footer">
+        <div>
+            <p>Copyright &copy; 2022 , All Rights Received</p>
+            <p>Contact us : <a href="mailto:sagarnanera30@gmail.com">sagarnanera30@gmail.com</a></p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

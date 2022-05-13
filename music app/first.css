@@ -1,0 +1,62 @@
+body {
+    background-image: url(back_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    margin: auto;
+    padding: 10px;
+    color:chocolate;
+}
+
+section {
+    
+    position: relative;
+    align-content: center;
+    margin: auto;
+    height: 550px;
+    width: 600px;
+    background-color: rgb(224, 224, 240);
+    padding: 30px;
+}
+
+div {
+    align-content: center;
+    
+}
+
+.song {
+
+    background-color: darkgray;
+    padding: 0;
+    margin: 10px;
+    height: 100px;
+}
+
+legend .audio {
+
+    display: inline;
+}
+
+legend {
+    /* position: relative;
+    top: 20%;
+    left: 10%; */
+    font-size: larger;
+    justify-self:center;
+}
+
+.audio {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: 500px;
+}

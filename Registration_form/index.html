@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            color: black;
+            font-size: large;
+            font-family: calibri;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        form {
+            background-color: white;
+            box-sizing: border-box;
+            /* border: 2px solid black; */
+            box-shadow:
+                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            width: auto;
+        }
+
+        #submit,
+        #reset {
+            margin: 0 10px;
+        }
+
+        #sr {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+
+        input.text {
+            width: -webkit-fill-available;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="validate.js"></script>
+    <h1>Registration Form</h1>
+    <form name="myform" onsubmit="return validate()">
+        <table cellpadding="10">
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input class="text" type="text" id="fname" name="fname" placeholder="Enter your first name"
+                        required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input class="text" type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input class="text" type="text" id="email" name="email" placeholder="Enter your email" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Mobile">Mobile Number</label></td>
+                <td><input class="text" type="tel" id="Mobile" name="Mobile" placeholder="Enter your Mobile numbers"
+                        required></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td><input type="radio" id="Male" name="Gender" value="male" checked>
+                    <label for="Male">Male</label>
+                    <input type="radio" id="female" name="Gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"
+                        required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input class="text" type="text" id="city" name="city" placeholder="Enter your city" required></td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td><input class="text" type="text" id="state" name="state" placeholder="Enter your state" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pin">Pincode</label></td>
+                <td><input class="text" type="text" id="pin" name="Pincode" maxlength="6"
+                        placeholder="Enter your Pincode" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="qualification">Qualification</label></td>
+                <td>
+                    <select name="qualification" id="qualification">
+                        <option value="10th">10th</option>
+                        <option value="12th" selected>12th</option>
+                        <option value="graduation">Graduation</option>
+                        <option value="pgraduation">Post Graduation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">Course</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="btech" selected>B.tech</option>
+                        <option value="bcom">B.com</option>
+                        <option value="bba">BBA</option>
+                        <option value="bsc">B.sc</option>
+                        <option value="ba">BA</option>
+                        <option value="bca">BCA</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div id="sr">
+            <input id="submit" type="submit" value="submit" name="submit">
+            <input id="reset" type="reset" value="reset" name="reset">
+        </div>
+    </form>
+</body>
+
+</html>

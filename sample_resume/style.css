@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: rgb(213,213,213);
+    justify-content: center;
+    padding: 5px;
+}
+/* h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    margin-top: 2%;
+} */
+
+.outer {
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(124, 121, 120);
+    /* float:left; */
+    justify-content: center;
+    /* margin: 20px 0; */
+    height: auto;
+    width: 850px;
+    box-shadow: 3px 3px black, -1px 3px 3px black;
+}
+
+#pic {
+    margin: 10px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+#contact , #Career , #projects{
+    margin: 15px;
+    border: 0;
+    text-align: left;
+    margin-top: 35px;
+}
+
+
+/* #Career {
+    position: relative;
+    top: 150px;
+} */
+
+a {
+    text-decoration: none;
+    color:ghostwhite;
+    /* font-size: 10px; */
+}
+
+.icons {
+    height: 20px;
+    /* width: 30px; */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#loc , #mo ,#email , #pj{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.pj1 {
+    color: white;
+    font-size: 15px;
+}
+
+/* #email {
+    font-size: 15px;
+}
+
+#mo {
+    font-size: 15px;
+} */
+
+.inline{
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    /* padding-bottom: 5px; */
+}
+
+legend {
+    font-family: Calibri;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin-bottom: 15px;
+    color: white;
+}
+
+.inner {
+    background-color:azure;
+    color:blue;
+    margin: 20px;;
+    width: 50%;
+}
+
+.div1 {
+    margin-right: 0;
+    width: 30%;
+    background-color:rgb(37,56,71);
+    color: white;
+    text-align: center;
+}
+.div2 {
+    margin-left: 0;
+    width: 80%;
+    background-color:white;
+}
+
+
+#name {
+    height: 50px;
+    /* width: auto; */
+    background-color:rgb(245,245,245);
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#profile , #education , #skills {
+    margin: 25px;
+    margin-top: 45px;
+    border: 0;
+    text-align: left;
+}
+
+#prof , #edu , #skill{
+    color: black;
+}
+ 
+#p1 {
+    color: black;
+    text-align:justify;
+    font-family: sans-serif;
+}
+
+
+table , th, tr, td{
+    border: black solid 2px;
+    height: auto;
+    width: -webkit-fill-available;
+    margin: 0;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+}
+
+#s1 , li {
+    margin-left: 20px;
+    color: black;
+}
