@@ -1,4 +1,4 @@
-# some_basic_html_css_pages
+# Basic_html_css_pages
 some basic pages using html and css only.
 
 
