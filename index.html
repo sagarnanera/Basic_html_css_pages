@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <title>Responsive Cards</title>
+    <style>
+
+.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+	align-items:center;
+    	box-sizing: border-box;
+      }
+
+      /* Navbar links styling */
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+
+      /* Page content styling */
+      body {
+        margin-top: 60px;
+        padding: 20px;
+      }
+      /* Flexbox container */
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      /* Flexbox item */
+      .card {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: transform 0.2s;
+	margin:5px 0;
+      }
+
+      /* Hover state */
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Card title */
+      .card h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      /* Card link */
+      .card a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+      }
+	
+	a {
+	text-decoration:none;
+	color:black;
+	}
+
+      /* Media query for smaller screens */
+      @media (max-width: 600px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<div class="navbar">
+      <div class="logo">
+        <a href="#">Basic HTML & CSS</a>
+      </div>
+      <div class="menu">
+        <a href="https://github.com/sagarnanera" style="">GitHub</a>
+        <a href="mailto:sagarnanera30@gmail.com">Mail</a>
+      </div>
+    </div>
+    <div class="cards">
+      <a href="https://sagarnanera.github.io/Basic_html_css_pages/Registration_form/" target="blank">
+        <div class="card">
+          <h2>Go to Page 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+<a href="https://sagarnanera.github.io/Basic_html_css_pages/footer%20and%20header/" target="blank">
+        <div class="card">
+          <h2>Go to Page 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+<a href="https://sagarnanera.github.io/Basic_html_css_pages/sample_resume" target="blank">
+        <div class="card">
+          <h2>Go to Page 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+<a href="https://sagarnanera.github.io/Basic_html_css_pages/music%20app/" target="blank">
+        <div class="card">
+          <h2>Go to Page 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+  </body>
+</html>
